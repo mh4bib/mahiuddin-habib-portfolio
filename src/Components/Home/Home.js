@@ -8,7 +8,9 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Projects></Projects>
-            <JotformEmbed src="https://form.jotform.com/221594388535466" />
+            <div>
+            <JotformEmbed src="https://form.jotform.com/221594388535466"/>
+            </div>
         </div>
     );
 };

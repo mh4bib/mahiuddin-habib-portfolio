@@ -1,0 +1,49 @@
+[
+{
+    "_id":"1",
+    "name":"Power Tools",
+    "picture1":"https://i.ibb.co/z6D3Xzp/Screenshot-2022-06-10-210440.png",
+    "picture2":"",
+    "picture3":"",
+    "desc":"It is a simple tools manufacturer website. It is a full stack project with various features and functionality. There is functionality for admin. Users can buy and pay for a certain amount of product controlled by admin. An admin will see some secured maintaining rout by which he can add, remove or modify tool as his choice",
+    
+    "bulletPoints":[
+        "This is a fully Single Page Application",
+        "Used firebase to authenticate users",
+        "Functionality for admin",
+        "Secured APIs with json web token",
+        "Used nodejs in backend",
+        "Mongodb for storing data"
+    ]
+},
+{
+    "_id":"2",
+    "name":"Book Fair",
+    "picture1":"https://i.ibb.co/b6fk70r/Screenshot-2022-06-10-224956.png",
+    "picture2":"",
+    "picture3":"",
+    "desc":"It is a stock management website for book. Inventories are well decorated and well sorted to help manage accurately. Users can add and remove their product and update stock quantity. As it is a single page application, it is also rendered efficiently.",
+    "bulletPoints":[
+        "email-password bases and google login system to authenticate user.",
+        "has protected route to secure users individual item.",
+        "implemented jwt to ensure users data stored in database",
+        "used nodejs to create, read, update and delete data",
+        "to store data, store used mongodb as it is noSql irrelational database and easy to handle."
+    ]
+},
+{
+    "_id":"3",
+    "name":"Health Corner",
+    "picture1":"https://i.ibb.co/fStC3zG/Screenshot-2022-06-10-225023.png",
+    "picture2":"",
+    "picture3":"",
+    "desc":"This is a independent service provider website with various necessary features like login with email password as well as social login like google. There checkout rout which is a protected rout that means any one without login or registration can not be able to enter the rout.",
+    "bulletPoints":[
+        "There is a home page and a banner",
+        "Services section are below in the banner",
+        "The check out rout is a private route in this project",
+        "In blogs section, I answered the 3 question",
+        "You can know about me in about me section"
+    ]
+}
+]

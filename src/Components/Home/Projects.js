@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import powerTools from '../Images/power-tools.png';
 import bookFair from '../Images/book-fair.png';
 import healthCorner from '../Images/health-corner.png';
+import { Link } from 'react-router-dom';
+import Project from './Project';
 
-const Projects = () => {
+const Projects = ({setPrrojects}) => {
+    const [projects, setProjects] = useState([]);
+    useEffect(()=>{
+        fetch('Projects.json')
+        .then(res=>res.json())
+        .then(data=>setProjects(data))
+    },[])
+    setPrrojects=projects;
     return (
         <div className='mx-auto px-4 md:px-8 my-12'>
             <h1 className='text-3xl font-semibold my-4'>Projects</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8 w-[100%] md:w-[70%] mx-auto'>
-                <div className="w-[100%] md:w-95 bg-base-100 shadow-xl rounded-xl">
+                {
+                    projects.map(project=><Project
+                    key={project._id}
+                    project={project}
+                    ></Project>)
+                }
+                {/* <div className="w-[100%] md:w-95 bg-base-100 shadow-xl rounded-xl">
                     <figure><img className='rounded-t-xl' src={powerTools} alt="Shoes" /></figure>
                     <div className="p-4">
                         <h2 className="text-2xl">
@@ -51,10 +66,10 @@ const Projects = () => {
                             <div className="badge badge-outline">ReactJs</div>
                             <div className="badge badge-outline">Firebase</div>
                             <div className="badge badge-outline">jwt</div>
-                            
                         </div>
+                        <Link to={'/abc'} className='btn btn-primary'>Detail</Link>
                     </div>
-                </div>
+                </div> */}
 
 
 

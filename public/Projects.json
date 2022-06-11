@@ -1,10 +1,12 @@
 [
 {
-    "_id":"1",
+    "_id":"0",
     "name":"Power Tools",
     "picture1":"https://i.ibb.co/z6D3Xzp/Screenshot-2022-06-10-210440.png",
-    "picture2":"",
-    "picture3":"",
+    "picture2":"https://i.ibb.co/fXTkvBk/image.png",
+    "picture3":"https://i.ibb.co/D5mnMqh/Screenshot-2022-06-10-211335.png",
+    "picture4":"https://i.ibb.co/mc5XDMx/Screenshot-2022-06-10-211429.png",
+    "picture5":"https://i.ibb.co/F5YKMBb/image.png",
     "desc":"It is a simple tools manufacturer website. It is a full stack project with various features and functionality. There is functionality for admin. Users can buy and pay for a certain amount of product controlled by admin. An admin will see some secured maintaining rout by which he can add, remove or modify tool as his choice",
     
     "bulletPoints":[
@@ -14,14 +16,19 @@
         "Secured APIs with json web token",
         "Used nodejs in backend",
         "Mongodb for storing data"
-    ]
+    ],
+    "live":"https://power-tools-bee92.web.app/",
+    "client":"https://github.com/mahiuddinhabib/power-tools-client",
+    "server":"https://github.com/mahiuddinhabib/power-tools-server"
 },
 {
-    "_id":"2",
+    "_id":"1",
     "name":"Book Fair",
     "picture1":"https://i.ibb.co/b6fk70r/Screenshot-2022-06-10-224956.png",
-    "picture2":"",
-    "picture3":"",
+    "picture2":"https://i.ibb.co/K0yhyDG/Screenshot-2022-06-10-213547.png",
+    "picture3":"https://i.ibb.co/WzmnZHg/Screenshot-2022-06-10-213717.png",
+    "picture4":"https://i.ibb.co/k0QDntr/image.png",
+    "picture5":"https://i.ibb.co/Bn631Sk/image.png",
     "desc":"It is a stock management website for book. Inventories are well decorated and well sorted to help manage accurately. Users can add and remove their product and update stock quantity. As it is a single page application, it is also rendered efficiently.",
     "bulletPoints":[
         "email-password bases and google login system to authenticate user.",
@@ -29,14 +36,19 @@
         "implemented jwt to ensure users data stored in database",
         "used nodejs to create, read, update and delete data",
         "to store data, store used mongodb as it is noSql irrelational database and easy to handle."
-    ]
+    ],
+    "live":"https://books-warehouse-e0226.web.app/",
+    "client":"https://github.com/mahiuddinhabib/books-warehouse-client",
+    "server":"https://github.com/mahiuddinhabib/books-warehouse-server"
 },
 {
-    "_id":"3",
+    "_id":"2",
     "name":"Health Corner",
     "picture1":"https://i.ibb.co/fStC3zG/Screenshot-2022-06-10-225023.png",
-    "picture2":"",
-    "picture3":"",
+    "picture2":"https://i.ibb.co/QmWW4PT/image.png",
+    "picture3":"https://i.ibb.co/jG3kxvq/image.png",
+    "picture4":"https://i.ibb.co/dDMPyfD/image.png",
+    "picture5":"https://i.ibb.co/jG3kxvq/image.png",
     "desc":"This is a independent service provider website with various necessary features like login with email password as well as social login like google. There checkout rout which is a protected rout that means any one without login or registration can not be able to enter the rout.",
     "bulletPoints":[
         "There is a home page and a banner",
@@ -44,6 +56,9 @@
         "The check out rout is a private route in this project",
         "In blogs section, I answered the 3 question",
         "You can know about me in about me section"
-    ]
+    ],
+    "live":"https://health-corner-a79d1.web.app/",
+    "client":"https://github.com/mahiuddinhabib/health-corner",
+    "server":""
 }
 ]

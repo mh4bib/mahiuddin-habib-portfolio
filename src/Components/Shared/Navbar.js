@@ -26,7 +26,7 @@ const Navbar = () => {
             color: navTextColor,
             transition: "all 0.5s"
         }}
-            className="navbar bg-transparent fixed">
+            className="navbar bg-transparent fixed z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">

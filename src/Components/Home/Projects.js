@@ -21,6 +21,7 @@ const Projects = () => {
                         key={project._id}
                         project={project}
                         setId={setId}
+                        className="z-0"
                     ></Project>)
                 }
                 <DetailModal 

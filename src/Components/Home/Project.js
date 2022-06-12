@@ -1,11 +1,31 @@
 import React from 'react';
+import './Project.css';
 
-const Project = ({project, setId}) => {
-    const { _id, name, desc, picture1, picture2, picture3, bulletPoints } = project;
+const Project = ({ project, setId }) => {
+    const { _id, name, desc, fullPage, picture1, picture2, picture3, bulletPoints } = project;
 
     return (
-        <div>
-            <div className="w-[100%] md:w-95 bg-base-100 shadow-xl rounded-xl">
+        <div className='project-container'>
+            <div className='relative'>
+                <div className='h-[400px] overflow-hidden bg-orange-400 project-img'>
+                    <img src={fullPage} alt="" />
+                </div>
+
+                <div className='bg-[#a882ff] h-[400px] absolute top-0 p-4 project-desc'>
+                    <h1 className='text-2xl font-semibold mb-3'>{name}</h1>
+                    <p className='text-justify mb-3'>{desc.slice(0, 200)}...</p>
+                    <ul className='text-left'>
+                        {bulletPoints.map(p=><li># {p.slice(0,32)}..</li>).slice(0,3)}
+                    </ul>
+                    <label for="my-modal-6" class="btn btn-primary absolute bottom-4 right-[110px]" onClick={()=>setId(_id)}>See Detail</label>
+                </div>
+            </div>
+
+
+
+
+
+            {/* <div className="w-[100%] md:w-95 bg-base-100 shadow-xl rounded-xl">
                 <figure><img className='rounded-t-xl' src={picture1} alt="project" /></figure>
                 <div className="p-4">
                     <h2 className="text-2xl">
@@ -19,22 +39,8 @@ const Project = ({project, setId}) => {
                         <div className="badge badge-outline">Stripe</div>
                     </div>
                     <label for="my-modal-6" class="btn modal-button" onClick={()=>setId(_id)}>open modal</label>
-                    {/* <Link to={`/project-detail/${_id}`} className='btn btn-primary'>Detail</Link> */}
-                </div>
-            </div>
-
-            {/* detail modal  */}
-            {/* <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <h3 class="font-bold text-lg">{name}</h3>
-                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-                    <div class="modal-action">
-                        <label for="my-modal-6" class="btn">Yay!</label>
-                    </div>
                 </div>
             </div> */}
-
         </div>
     );
 };

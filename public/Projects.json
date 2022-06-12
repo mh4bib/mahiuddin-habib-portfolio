@@ -2,6 +2,7 @@
 {
     "_id":"0",
     "name":"Power Tools",
+    "fullPage":"https://i.ibb.co/YLx0cFS/power-tools-bee92-web-app.png",
     "picture1":"https://i.ibb.co/z6D3Xzp/Screenshot-2022-06-10-210440.png",
     "picture2":"https://i.ibb.co/fXTkvBk/image.png",
     "picture3":"https://i.ibb.co/D5mnMqh/Screenshot-2022-06-10-211335.png",
@@ -24,6 +25,7 @@
 {
     "_id":"1",
     "name":"Book Fair",
+    "fullPage":"https://i.ibb.co/gPMYr0C/books-warehouse-e0226-web-app.png",
     "picture1":"https://i.ibb.co/b6fk70r/Screenshot-2022-06-10-224956.png",
     "picture2":"https://i.ibb.co/K0yhyDG/Screenshot-2022-06-10-213547.png",
     "picture3":"https://i.ibb.co/WzmnZHg/Screenshot-2022-06-10-213717.png",
@@ -44,6 +46,7 @@
 {
     "_id":"2",
     "name":"Health Corner",
+    "fullPage":"https://i.ibb.co/M6m8DmB/health-corner-a79d1-web-app.png",
     "picture1":"https://i.ibb.co/fStC3zG/Screenshot-2022-06-10-225023.png",
     "picture2":"https://i.ibb.co/QmWW4PT/image.png",
     "picture3":"https://i.ibb.co/jG3kxvq/image.png",

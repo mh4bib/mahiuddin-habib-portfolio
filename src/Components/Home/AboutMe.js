@@ -3,8 +3,8 @@ import profilePic from '../Images/profile-photo.jpeg';
 
 const AboutMe = () => {
     return (
-        <>
-        <h1 className='text-3xl mt-8 font-bold'>About Me</h1>
+        <div className='bg-[#8BFFFF]'>
+        <h1 className='text-3xl font-bold'>About Me</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mx-4 md:mx-16 my-8'>
             <div className='bg-gray-200 p-12 rounded-xl'>
                 <img src={profilePic} alt="" className='w-[250px] mx-auto rounded-lg mb-4'/>
@@ -28,7 +28,7 @@ const AboutMe = () => {
                 </ul>
             </div>
         </div>
-        </>
+        </div>
     );
 };
 

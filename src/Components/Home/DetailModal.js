@@ -19,7 +19,8 @@ const DetailModal = ({ projects, id }) => {
         <div>
             <input type="checkbox" id="my-modal-6" class="modal-toggle" />
             <div class="modal modal-bottom">
-                <div class="modal-box w-12/12 md:w-9/12">
+                <div class="modal-box w-12/12 md:w-9/12 bg-[#F6C6EA] pt-10">
+                <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     {/* carousel */}
                     <div className='md:w-[450px] mx-auto'>
                         <Swiper
@@ -60,7 +61,7 @@ const DetailModal = ({ projects, id }) => {
                             freeMode={true}
                             watchSlidesProgress={true}
                             modules={[FreeMode, Navigation, Thumbs]}
-                            className="mySwiper"
+                            className="mySwiper mt-6"
                         >
                             <SwiperSlide>
                                 <img src={picture1} />
@@ -89,9 +90,6 @@ const DetailModal = ({ projects, id }) => {
                     <ul className='text-left'>
                         {bulletPoints?.map((p, index)=><li>{index+1}. {p}</li>)}
                     </ul>
-                    <div class="modal-action">
-                        <label for="my-modal-6" class="btn">Close</label>
-                    </div>
                 </div>
             </div>
         </div>

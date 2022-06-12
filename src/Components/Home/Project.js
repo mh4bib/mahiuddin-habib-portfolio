@@ -7,11 +7,11 @@ const Project = ({ project, setId }) => {
     return (
         <div className='project-container'>
             <div className='relative'>
-                <div className='h-[400px] overflow-hidden bg-orange-400 project-img'>
-                    <img src={fullPage} alt="" />
+                <div className='h-[400px] overflow-hidden rounded-xl bg-orange-400 project-img'>
+                    <img className=' rounded-xl' src={fullPage} alt="" />
                 </div>
 
-                <div className='bg-[#a882ff] h-[400px] absolute top-0 p-4 project-desc'>
+                <div className='bg-[#a882ff] h-[400px] absolute top-0 p-4 rounded-xl project-desc text-[black]'>
                     <h1 className='text-2xl font-semibold mb-3'>{name}</h1>
                     <p className='text-justify mb-3'>{desc.slice(0, 200)}...</p>
                     <ul className='text-left'>

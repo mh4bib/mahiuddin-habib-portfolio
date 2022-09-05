@@ -1,9 +1,9 @@
 import React from 'react';
-import profilePic from '../Images/profile-photo.jpeg';
+import profilePic from '../Images/profile-photo.png';
 
 const AboutMe = () => {
     return (
-        <div className='bg-[#8BFFFF] py-12'>
+        <div id='aboutme' className='bg-[#8BFFFF] py-12'>
         <h1 className='text-3xl font-bold'>About Me</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mx-4 md:mx-16 my-8'>
             <div className='p-12 rounded-xl'>

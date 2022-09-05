@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const menu = <>
-        <li className='mx-6'>Home</li>
-        <li className='mx-6'>Home</li>
-        <li className='mx-6'>Home</li>
-        <li className='mx-6'>Home</li>
+        <li className='mx-6'><Link to={'/'}>Home</Link></li>
+        <li className='mx-6'><a href='#aboutme'>About Me</a></li>
+        <li className='mx-6'><Link to={'/blogs'}>Blogs</Link></li>
     </>
     const [navTextColor, setnavTextColor] = useState("10rem");
     const [navColor, setnavColor] = useState("transparent");

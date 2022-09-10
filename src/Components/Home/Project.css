@@ -9,7 +9,8 @@
 }
 
 .hidden-content {
-    display: none;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .project-img img {
@@ -30,16 +31,5 @@
 }
 
 .project-container:hover .hidden-content {
-    display: inline;
-    animation: fadeIn 1s;
-}
-
-@keyframes fadeIn {
-    from {
-         opacity: 0;
-    }
-
-    to {
-         opacity: 1;
-    }
+    opacity: 1;
 }

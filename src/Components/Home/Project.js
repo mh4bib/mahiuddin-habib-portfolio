@@ -23,12 +23,9 @@ const Project = ({ project, setId }) => {
                     </div> */}
                 </div>
 
-                <div className='bg-[#a882ff] h-[450px] absolute top-[158px] rounded-xl project-desc text-[black]'>
+                <div className='bg-[#90e0e8] h-[450px] absolute top-[158px] rounded-xl project-desc text-[black]'>
                     <div className='p-4'>
-                        <h1 className='text-2xl font-semibold mb-3'>{name}</h1>
-                        <Link to={'/'} className='mx-2 hidden-content'>Live site</Link>
-                        <Link to={'/'} className='mx-2 hidden-content'>Client side</Link>
-                        <Link to={'/'} className='mx-2 hidden-content'>Server side</Link>
+                        <h1 className='text-2xl font-semibold'>{name}</h1>
                         <p className='text-justify mb-3'>{desc.slice(0, 100)}...</p>
                         <ul className='list-disc list-inside text-left'>
                             {bulletPoints.map(p => <li>{p.slice(0, 32)}..</li>).slice(0, 3)}
@@ -36,11 +33,26 @@ const Project = ({ project, setId }) => {
                         <div className="badge badge-outline mx-1 mt-3">React</div>
                         <div className="badge badge-outline mx-1 mt-3">Express js</div>
                         <div className="badge badge-outline mx-1 mt-3">Node js</div>
-                        <div className="badge badge-outline mx-1 mt-3 hidden-content">MongoDB</div>
-                        <div className="badge badge-outline mx-1 mt-3 hidden-content">Redux</div>
-                        <div className="badge badge-outline mx-1 mt-3 hidden-content">Firebase</div>
                     </div>
-                    <label for="my-modal-6" class="btn btn-primary absolute bottom-4 right-[110px] hidden" onClick={() => setId(_id)}>See Detail</label>
+
+                    {/* hidden content */}
+                    <div className='p-4 bg-[#90e0e8] absolute top-[0px] rounded-xl hidden-content'>
+                        <h1 className='text-2xl font-semibold'>{name}</h1>
+                        <Link to={'/'} className='mx-2'>Live site</Link>
+                        <Link to={'/'} className='mx-2'>Client side</Link>
+                        <Link to={'/'} className='mx-2'>Server side</Link>
+                        <p className='text-justify mb-3'>{desc.slice(0, 100)}...</p>
+                        <ul className='list-disc list-inside text-left'>
+                            {bulletPoints.map(p => <li>{p.slice(0, 32)}..</li>).slice(0, 3)}
+                        </ul>
+                        <div className="badge badge-outline mx-1 mt-3">React</div>
+                        <div className="badge badge-outline mx-1 mt-3">Express js</div>
+                        <div className="badge badge-outline mx-1 mt-3">Node js</div>
+                        <div className="badge badge-outline mx-1 mt-3">MongoDB</div>
+                        <div className="badge badge-outline mx-1 mt-3">Redux</div>
+                        <div className="badge badge-outline mx-1 mt-3">Firebase</div>
+                        <label for="my-modal-6" class="btn btn-primary" onClick={() => setId(_id)}>See Detail</label>
+                    </div>
                 </div>
             </div>
 

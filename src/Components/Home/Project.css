@@ -1,24 +1,45 @@
-.project-desc{
-    opacity: 0;
+.project-desc {
+    top: 158px;
+    transition: top 1s;
+}
+
+.project-img {
+    opacity: 1;
     transition: opacity 1s;
 }
-.project-img{
-   opacity: 1;
-   transition: opacity 1s;
+
+.hidden-content {
+    display: none;
 }
 
-.project-img img{
-   transition: transform 1s;
+.project-img img {
+    transition: transform 1s;
 }
 
-.project-container:hover .project-img{
+.project-container:hover .project-img {
     opacity: 0.3;
 }
 
-.project-container:hover .project-img img{
+.project-container:hover .project-img img {
     transform: scale(1.5, 1.5);
 }
 
-.project-container:hover .project-desc{
-    opacity: 0.8;
+.project-container:hover .project-desc {
+    top: 45px;
+    opacity: 1;
+}
+
+.project-container:hover .hidden-content {
+    display: inline;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+         opacity: 0;
+    }
+
+    to {
+         opacity: 1;
+    }
 }

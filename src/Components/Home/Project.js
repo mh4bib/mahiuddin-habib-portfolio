@@ -1,23 +1,46 @@
 import React from 'react';
 import './Project.css';
+import powerTools from '../Images/multi-device-power-tools.png';
+import { Link } from 'react-router-dom';
 
 const Project = ({ project, setId }) => {
     const { _id, name, desc, fullPage, picture1, picture2, picture3, bulletPoints } = project;
 
     return (
         <div className='project-container'>
-            <div className='relative'>
-                <div className='h-[400px] overflow-hidden rounded-xl bg-orange-400 project-img'>
-                    <img className=' rounded-xl' src={fullPage} alt="" />
+            <div className='relative overflow-hidden'>
+                <div className='h-[450px] overflow-hidden rounded-xl bg-white project-img'>
+                    <img className='' src={powerTools} alt="" />
+                    {/* <div className='p-4'>
+                        <h1 className='text-2xl font-semibold mb-3'>{name}</h1>
+                        <p className='text-justify mb-3'>{desc.slice(0, 100)}...</p>
+                        <ul className='list-disc list-inside text-left'>
+                            {bulletPoints.map(p => <li>{p.slice(0, 32)}..</li>).slice(0, 3)}
+                        </ul>
+                        <div className="badge badge-outline mx-1 mt-3">React</div>
+                        <div className="badge badge-outline mx-1 mt-3">Express js</div>
+                        <div className="badge badge-outline mx-1 mt-3">Node js</div>
+                    </div> */}
                 </div>
 
-                <div className='bg-[#a882ff] h-[400px] absolute top-0 p-4 rounded-xl project-desc text-[black]'>
-                    <h1 className='text-2xl font-semibold mb-3'>{name}</h1>
-                    <p className='text-justify mb-3'>{desc.slice(0, 200)}...</p>
-                    <ul className='text-left'>
-                        {bulletPoints.map(p=><li># {p.slice(0,32)}..</li>).slice(0,3)}
-                    </ul>
-                    <label for="my-modal-6" class="btn btn-primary absolute bottom-4 right-[110px]" onClick={()=>setId(_id)}>See Detail</label>
+                <div className='bg-[#a882ff] h-[450px] absolute top-[158px] rounded-xl project-desc text-[black]'>
+                    <div className='p-4'>
+                        <h1 className='text-2xl font-semibold mb-3'>{name}</h1>
+                        <Link to={'/'} className='mx-2 hidden-content'>Live site</Link>
+                        <Link to={'/'} className='mx-2 hidden-content'>Client side</Link>
+                        <Link to={'/'} className='mx-2 hidden-content'>Server side</Link>
+                        <p className='text-justify mb-3'>{desc.slice(0, 100)}...</p>
+                        <ul className='list-disc list-inside text-left'>
+                            {bulletPoints.map(p => <li>{p.slice(0, 32)}..</li>).slice(0, 3)}
+                        </ul>
+                        <div className="badge badge-outline mx-1 mt-3">React</div>
+                        <div className="badge badge-outline mx-1 mt-3">Express js</div>
+                        <div className="badge badge-outline mx-1 mt-3">Node js</div>
+                        <div className="badge badge-outline mx-1 mt-3 hidden-content">MongoDB</div>
+                        <div className="badge badge-outline mx-1 mt-3 hidden-content">Redux</div>
+                        <div className="badge badge-outline mx-1 mt-3 hidden-content">Firebase</div>
+                    </div>
+                    <label for="my-modal-6" class="btn btn-primary absolute bottom-4 right-[110px] hidden" onClick={() => setId(_id)}>See Detail</label>
                 </div>
             </div>
 

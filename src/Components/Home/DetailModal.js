@@ -20,7 +20,7 @@ const DetailModal = ({ projects, id }) => {
             <input type="checkbox" id="my-modal-6" class="modal-toggle" />
             <div class="modal modal-bottom">
                 <div class="modal-box w-12/12 md:w-9/12 bg-[#F6C6EA] pt-10">
-                <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     {/* carousel */}
                     <div className='md:w-[450px] mx-auto'>
                         <Swiper
@@ -88,7 +88,7 @@ const DetailModal = ({ projects, id }) => {
 
                     <p class="pt-4 text-left mb-2 hidden md:block w-[900px]">{desc}...</p>
                     <ul className='text-left'>
-                        {bulletPoints?.map((p, index)=><li>{index+1}. {p}</li>)}
+                        {bulletPoints?.map((p, index) => <li>{index + 1}. {p}</li>)}
                     </ul>
                 </div>
             </div>

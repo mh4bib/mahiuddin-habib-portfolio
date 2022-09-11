@@ -1,5 +1,6 @@
 import React from 'react';
 import JotformEmbed from 'react-jotform-embed';
+import Footer from '../Shared/Footer';
 import AboutMe from './AboutMe';
 import Banner from './Banner';
 import Contact from './Contact';
@@ -12,9 +13,7 @@ const Home = () => {
             <Projects></Projects>
             <AboutMe></AboutMe>
             <Contact></Contact>
-            <div>
-            {/* <JotformEmbed src="https://form.jotform.com/221594388535466"/> */}
-            </div>
+            <Footer></Footer>
         </div>
     );
 };

@@ -45,11 +45,11 @@ const Contact = () => {
           </div>
           <div className='flex items-center pt-8'>
             <BiMailSend className='text-3xl mr-4'></BiMailSend>
-            <p className='text-left'><span className='font-bold'>Email:</span> <a href = "mailto: mh.habib137@gmail.com">mh.habib137@gmail.com</a></p>
+            <p className='text-left'><span className='font-bold'>Email:</span> <a className='hover:underline' href = "mailto: mh.habib137@gmail.com">mh.habib137@gmail.com</a></p>
           </div>
           <div className='flex items-center pt-8'>
             <BiPhone className='text-3xl mr-4'></BiPhone>
-            <p className='text-left'><span className='font-bold'>Phone:</span> <a href="tel:+8801772046419">+8801772046419</a></p>
+            <p className='text-left'><span className='font-bold'>Phone:</span> <a className='hover:underline' href="tel:+8801772046419">+8801772046419</a></p>
           </div>
           <div className='flex items-center justify-center pt-8 pb-6'>
             <a href="#" target="_blank" className='text-4xl mx-2 text-[#4267B2]'><FaFacebookSquare></FaFacebookSquare></a>

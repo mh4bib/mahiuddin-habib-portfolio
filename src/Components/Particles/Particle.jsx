@@ -204,7 +204,7 @@ const Particle = () => {
                       color: {
                         value: [
                           "#FF5D9E",
-                          "8F71FF",
+                          "#8F71FF",
                           "#82ACFF",
                           "#8BFFFF",
                           "#CA82FF"

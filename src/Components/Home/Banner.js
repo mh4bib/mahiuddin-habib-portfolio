@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../Images/mahiuddin_habib_resume_.pdf';
+import resume from '../Images/mahiuddin_habib_resume.pdf';
 import Particle from '../Particles/Particle';
 
 const Banner = () => {

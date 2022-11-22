@@ -10,21 +10,24 @@ const Project = ({ project, setId }) => {
 
     return (
         <div className='project-container'>
-            <div className='relative overflow-hidden'>
-                <div className='h-[450px] overflow-hidden rounded-md bg-white project-img'>
+            <div className='relative overflow-hidden rounded-md'>
+                <div className='h-[490px] overflow-hidden rounded-md bg-white project-img'>
                     <img className='' src={fullPage} alt="" />
                 </div>
 
-                <div className='bg-[#90e0e8] h-[450px] absolute top-[158px] rounded-md project-desc text-[black]'>
+                <div className='bg-[#90e0e8] h-[490px] absolute top-[158px] rounded-md project-desc text-[black]'>
                     <div className='p-4'>
                         <h1 className='text-2xl font-semibold'>{name}</h1>
-                        <p className='text-justify mb-3'>{desc.slice(0, 120)}...</p>
-                        <ul className='list-disc list-inside text-left'>
-                            {bulletPoints.map(p => <li>{p.slice(0, 32)}..</li>).slice(0, 3)}
+                        <p className='text-justify my -3'>{desc.slice(0, 150)}...</p>
+                        <ul className='list-disc list-inside text-left mb-4'>
+                            {bulletPoints.map(p => <li>{p.slice(0, 40)}..</li>).slice(0, 3)}
                         </ul>
-                        <div className="badge badge-outline mx-1 mt-3">React</div>
-                        <div className="badge badge-outline mx-1 mt-3">Express js</div>
-                        <div className="badge badge-outline mx-1 mt-3">Node js</div>
+                        <div className="badge badge-outline mx-1 mt-2">React</div>
+                        <div className="badge badge-outline mx-1 mt-2">Express js</div>
+                        <div className="badge badge-outline mx-1 mt-2">Node js</div>
+                        <div className="badge badge-outline mx-1 mt-2">MongoDB</div>
+                        <div className="badge badge-outline mx-1 mt-2">Redux</div>
+                        <div className="badge badge-outline mx-1 mt-2">Firebase</div>
                     </div>
 
                     {/* hidden content */}
@@ -44,16 +47,17 @@ const Project = ({ project, setId }) => {
                                 <Link to={'/'} className='font-semibold hover:underline'>Server Side</Link>
                             </span>
                         </div>
-                        <p className='text-justify mb-3'>{desc.slice(0, 100)}...</p>
+                        <p className='text-justify mb-3'>{desc.slice(0, 150)}...</p>
                         <ul className='list-disc list-inside text-left'>
-                            {bulletPoints.map(p => <li>{p.slice(0, 32)}..</li>).slice(0, 3)}
+                            {bulletPoints.map(p => <li>{p.slice(0, 40)}..</li>).slice(0, 4)}
                         </ul>
-                        <div className="badge badge-outline mx-1 mt-3">React</div>
-                        <div className="badge badge-outline mx-1 mt-3">Express js</div>
-                        <div className="badge badge-outline mx-1 mt-3">Node js</div>
-                        <div className="badge badge-outline mx-1 mt-3">MongoDB</div>
-                        <div className="badge badge-outline mx-1 mt-3">Redux</div>
-                        <div className="badge badge-outline mx-1 mt-3">Firebase</div>
+                        <div className="badge badge-outline mx-1 mt-2">React</div>
+                        <div className="badge badge-outline mx-1 mt-2">Express js</div>
+                        <div className="badge badge-outline mx-1 mt-2">Node js</div>
+                        <div className="badge badge-outline mx-1 mt-2">MongoDB</div>
+                        <div className="badge badge-outline mx-1 mt-2">Redux</div>
+                        <div className="badge badge-outline mx-1 mt-2">Firebase</div>
+                        <br />
                         <label for="my-modal-6" class="bg-blue-700 inline-block px-[12px] py-[5px] rounded-md mt-6 cursor-pointer" onClick={() => setId(_id)}>SEE DETAILS</label>
                     </div>
                 </div>
